@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Black edition</title>
+  <link rel="icon" href="image/loc.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+      <div class="upward" onClick="scrollTopTop()"></div>
+        <nav class="container">
+          <a class="logo" href="index.html"><b><p>Black</p></b></a>
+          <div class="nav-toggle"><span></span></div>
+          <form action="" method="get" id="searchform">
+          </form>
+          <ul id="menu">
+             <li><a href="">Product</a></li>
+             <li><a href="">About</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="container">
+        <div class="posts-list-carousel">
+          <div id="carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel" data-slide-to="1"></li>
+              <li data-target="#carousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <p><a href="jordan.html"><img class="img-fluid" src="image/slider_1.jpg" alt="1"></a></p>
+              </div>
+              <div class="carousel-item">
+                <img class="img-fluid" src="image/slider_2.jpg" alt="2">
+              </div>
+              <div class="carousel-item">
+                  <img class="img-fluid" src="image/slider_3.jpg" alt="3">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Last</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        </div>
+        <div class="container">
+        <div class="posts-list">
+          <article id="post-1" class="post">
+            <div class="post-content">
+              <div class="category"><a href="">By Black Team</a></div>
+              <h2 class="post-title">M. Jordan</h2>
+              <p>Even then, Jordan seemed somewhat hesitant to give James his crown. "We play in different eras," Jordan said. "He's an unbelievable player, he's one of the best players in the world, if not the best player in the world. "I know it's a natural tendency to compare eras to eras and it's going to continue to happen</p>
+              <div class="post-image"><img src="image/jordan.png"></div>
+              <div class="post-footer">
+                <a class="more-link" href="jordan.html">Learn more</a>
+                <div class="post-social">
+                </div>
+              </div>
+            </div>
+
+            <div class="post-content">
+              <h2 class="post-title">Lebron James</h2>
+              <p>LeBron James 'Never Called' Michael Jordan After MJ Gave The King His Phone Number. LeBron James grew up idolizing Michael Jordan. The two are inexorably linked in the annals of NBA history. Yet, King James has consistently tried to blaze his own trail from Day 1</p>
+              <div class="post-image"><img src="image/ljames.png"></div>
+              <div class="post-footer">
+                <a class="more-link" href="lebron.html">Learn more</a>
+                <div class="post-social">
+                </div>
+              </div>
+            </div>
+        </div>
+        
+          </div>
+          <footer>
+            <div class="container">
+              <div class="footer-col"><span>Change ur mind</span></div>
+              <div class="footer-col">
+                <div class="social-bar-wrap">
+                    <a href="https://github.com/Dllpi" target="_blank"><i class="fa fa-paper-plane fa-2x"></i></a>
+                </div>
+              </div>
+              <div class="footer-col">
+                <p>All rights reserved, 2022©</p>
+              </div>
+            </div>
+          </footer>
+
+          <script>
+            window.addEventListener('scroll', function(){
+              var scroll = document.querySelector('.upward')
+              scroll.classList.toggle("active", window.scrollY>100)
+            })
+                function scrollTopTop(){
+                  window.scrollTo({
+                    top:0,
+                    behavior:'smooth'
+                  })
+                }
+          </script> 
+
+          </body>
+          </html>
